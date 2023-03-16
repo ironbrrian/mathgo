@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  pokemongo
 //
-//  Created by Cathy Nguyen on 2/11/23.
+//  Created by Brian Nguyen on 2/11/23.
 //  Copyright © 2023 Brian Nguyen. All rights reserved.
 //
 

@@ -70,9 +70,21 @@
                                 <rect key="frame" x="0.0" y="-72" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokemonCell" rowHeight="100" id="bAN-8e-fGA">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bAN-8e-fGA" id="BFf-l8-mui">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPr-iJ-uor">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPr-iJ-uor">
                                 <rect key="frame" x="182" y="754" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="map"/>
                                 <connections>
                                     <action selector="BackToMapButtonPressed:" destination="fFD-Bq-JHO" eventType="touchUpInside" id="4j5-Qj-6No"/>
@@ -80,14 +92,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="vPr-iJ-uor" firstAttribute="centerX" secondItem="mEi-Vz-5Se" secondAttribute="centerX" id="97v-IL-CfK"/>
-                            <constraint firstItem="vPr-iJ-uor" firstAttribute="leading" secondItem="ekX-mz-rUf" secondAttribute="leading" constant="182" id="FVb-EX-dTn"/>
-                            <constraint firstItem="vPr-iJ-uor" firstAttribute="top" secondItem="mEi-Vz-5Se" secondAttribute="bottom" constant="8" id="N35-tW-Boh"/>
-                            <constraint firstItem="ekX-mz-rUf" firstAttribute="bottom" secondItem="vPr-iJ-uor" secondAttribute="bottom" constant="4" id="sEY-lJ-jRc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ekX-mz-rUf"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="mEi-Vz-5Se" id="bTI-Pb-3qt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyY-EE-MkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
